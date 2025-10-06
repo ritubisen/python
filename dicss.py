@@ -102,12 +102,70 @@
 
 #set or frozenset duplicate value count  nhi krta hai python  me
 
-#========================================= frozenset ===============================================
 
-'''l=[1,2,3,'python']
+
+
+
+
+
+
+#========================================= frozenset ===============================================
+# collection of unique elements
+# repesents by { } with (,) seprated elements
+# unordered collection
+#indexing not supported
+#immutable in nature
+
+
+
+
+
+l=[1,2,3,'python']
 fs = frozenset(l)
 print(fs)
-print(type(fs))'''
+# print(type(fs))
+# print(id(fs))
+# # print(sum(fs))
+# # print(max(fs))
+# # print(min(fs))
+# print(len(fs))
+fs1=frozenset({11,22,44,"python"})
+fs2=frozenset({1,2,4,"python","java"})
+print(fs1.union(fs2))
+print(fs1.intersection(fs2))
+print(fs1.difference(fs2))
+print(fs1.symmetric_difference(fs2))
+print(fs1.isdisjoint(fs2))
+print(fs1.issubset(fs2))
+print(fs1.issuperset(fs2))
+
+
+#==============================================  boolean =========================================
+
+
+x=True
+print(x)
+print(type(x))
+
+y=None
+print(y)
+print(type(y))
+
+
+z=range(10)
+print(z)
+print(type(z))
+
+
+
+
+
+
+
+
+
+
+
 
 
 #====================================== variable declairation ===============================
@@ -173,9 +231,10 @@ print(type(fs))'''
 
 #           ===========================================  ven diagram ========================
 
-s1={1,2,3,4,5,6}
-s2={4,5,6,7,8,9}
-print(s1.union(s2))
-print(s1.intersection(s2))
-print(s1.difference(s2))
-print(s1.symmetric_difference(s2))
+# s1={1,2,3,4,5,6}
+# s2={4,5,6,7,8,9}
+# print(s1.union(s2))
+# print(s1.intersection(s2))
+# print(s1.difference(s2))
+# print(s1.symmetric_difference(s2))
+# print(s2.symmetric_difference(s1))

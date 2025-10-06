@@ -81,7 +81,7 @@
 
 # methods of lists
 
-m=[22,30 ,3,2,88,'java','php' , 'python']
+# m=[22,30 ,3,2,88,'java','php' , 'python']
 # print(m.copy())     # copy krega
 # print(m.append('java'))   #value add krega 
 
@@ -93,8 +93,22 @@ m=[22,30 ,3,2,88,'java','php' , 'python']
 
 # print(m)
 
-print(m.index(22))
+# print(m.index(22))
 
-t = (1, 2, 3)
-t[0] = 10       
+# t = (1, 2, 3)
+# t[0] = 10       
 
+#-=============================================  {  empty  data type }  ===================================================
+
+import sys
+x=int()
+x=str()
+x=float()
+x=tuple()
+x=list()
+x=set()
+x=frozenset()
+x=dict()
+x=complex()
+y=sys.getsizeof(x)
+print(y)
