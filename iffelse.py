@@ -82,8 +82,8 @@
 
 ####  while condition ###
 # while - body executed when condition is true
-n=int(input("enter any number:"))
-i=1
+# n=int(input("enter any number:"))
+# i=1
 # while (i<=n):
 #       print(i)
 #       i=i+1
@@ -95,24 +95,123 @@ i=1
 #       print(i,end=",")
 #       i=i+1
 
-#^^^^^^^^^^^^^^^^^^^^^^^ isme numbers hirizantale show hoga with comma(,)///////////////////////////////////////
+# #^^^^^^^^^^^^^^^^^^^^^^^ isme numbers hirizantale show hoga with comma(,)///////////////////////////////////////
 
-while (i<=n):
-      if i<=(n-1):
-        print(i,end=",")
-      else:
-         print(i)
-      i=i+1
+# while (i<=n):
+#       if i<=(n-1):
+#         print(i,end=",")
+#       else:
+#          print(i)
+#       i=i+1
 
 #////////////////////////// isme sum ho rha h numbers ka /////////////////////////////////
 
-i,sum=1,0
-while (i<=n):
-      sum=sum+i
-      if i<=(n-1):
-        print(i,end="+")
-      else:
-         print(i,end="=")
-      i=i+1
-print(sum)
+# i,sum=1,0
+# while (i<=n):
+#       sum=sum+i
+#       if i<=(n-1):
+#         print(i,end="+")
+#       else:
+#          print(i,end="=")
+#       i=i+1
+# print(sum)
 
+
+#//////////////////////////////////////////////////////// while loop///////////////////////////////////////////////////////////
+
+# n=5
+# i=1
+# while i<=n:
+#     print('*'*n)
+#     i=i+1
+
+# n=1
+# i=1
+# while i<=n:
+#     print(' '(n-i)+''*i)
+#     i=i+1
+
+
+# i=5
+# while i<=n:
+#     print(' '(n-i)+''*i)
+#     i-0
+
+# 
+
+
+
+# n=5
+# i=0
+# while i<n:
+#     # print('*'*(n-i)+''*i)
+#     print(''*i+'*'*(n-i))
+#     i=i+1555555
+
+
+# while i<n:
+#     # print('*'*(n-i)+''*i)
+#     print(''*i+'*'*(n-i))
+#     i=i+1
+
+
+
+# n=5
+# i=1
+# while i<n:
+   
+#     print('*-'*i+' '*(n-i))
+#     i=i+1
+#     print(i)
+
+# i=i-2
+# while i>=1:
+#         print('*-'*i + ' '*(n-i))
+#         i=i-1
+
+
+# n=5
+# i=0
+# while i<n:
+#     print(''*i+'*' *(n-i))
+#     i=i+1
+
+# i=i-2
+# while i>=0:
+#     print('*'*(n-i)+''*i)
+#     i=i-1
+
+
+
+
+    #///////////////////////////////////////// amarstrong numbers /////////////////////////////////////
+
+# n = int(input("enter any number "))
+# x=n
+# tg=0
+# while n>0:
+#         tg=tg+1
+#         # n=n//10=0
+#         n= n//10
+# print(tg,n)
+# print(f'total_digit of {x}  is {tg}')
+
+
+
+n = int(input("enter any number "))
+x=n
+q=p=n
+sum=0
+tg=0
+while n>0:
+        tg=tg+1
+        n=n//10
+while   p>0 :
+        last_digit=x%10
+        sum = sum+last_digit**tg
+        p=p//10
+if q==sum:
+        print("Armstrong" )             
+else:
+    
+        print("Armstrong" ) 
