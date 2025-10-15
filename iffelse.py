@@ -198,20 +198,109 @@
 
 
 
-n = int(input("enter any number "))
-x=n
-q=p=n
-sum=0
-tg=0
-while n>0:
-        tg=tg+1
-        n=n//10
-while   p>0 :
-        last_digit=x%10
-        sum = sum+last_digit**tg
-        p=p//10
-if q==sum:
-        print("Armstrong" )             
-else:
+# n = int(input("enter any number "))
+# x=n
+# q=p=n
+# sum=0
+# tg=0
+# while n>0:
+#         tg=tg+1
+#         n=n//10
+# while   p>0 :
+#         last_digit=x%10
+#         sum = sum+last_digit**tg
+#         p=p//10
+# if q==sum:
+#         print("Armstrong" )             
+# else:
     
-        print("Armstrong" ) 
+#         print("Armstrong" ) 
+
+
+#///////////////////////////////////////////////////////  latter printing ////////////////////////////////////////////////
+# n=5
+# i=1
+# while i<=5:
+#     print(ch,end='')
+#     ch=chr(ord(ch)+1)
+#     chr(65+1)
+#     i=i+1
+
+# n=5
+# ch='A'
+# i=1
+# while i<=n:
+#     J=1
+#     while J<=i:
+#         print(ch,end='')
+#         ch=chr(ord(ch)+2)
+#         J=J+1
+#         print()
+#         i=i+1
+
+#         n=5
+#         j='A'
+#         i=1
+#         while i<=n:
+#             j=1
+#             print(j,end='')
+#             j=chr(ord(j)+1)
+#             j=j+1
+#             print()
+#             i=i+1
+
+#////////////////////////////////////////////////////  for loop //////////////////////////////////////////////////////////////////////////#
+
+# s=input("enter any string")
+
+# for i in s:
+#         print(i)
+# print("thanks....")
+
+
+
+
+# l=eval(input("enter any list:"))
+
+# for i in l:
+#         print(i)
+# print("thanks....")
+
+
+
+
+
+# d=eval(input("enter any tuple:"))
+
+# for i in d.values():
+#         print(i)
+# print("thanks....")
+
+#////////////////////////////////////////////////////  for loop unsing in range  ///////////////////////////////////////////////////////////////
+
+
+
+# n=5
+# i=1
+# while i<=n:
+#     print('*'*i)
+#     i=i+1
+
+# n=7
+# for i in range(1,n+1):
+#      print('*'*i)
+
+
+
+
+
+# n=5
+# for i in range(0,n):
+#        print('*'*(n-i)+' '*i)
+# for i in range(2,n+1):
+#        print('*'*i)
+
+
+
+
+
