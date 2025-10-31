@@ -92,8 +92,111 @@
 # display(10,20,30,40,50)  
     
 
-# 4.  keyword argument --------------------------------------------------*************************************--------------------------
+# 4.  keyword argument --------------------------------------------------*************************************-------------------------- 
 
-def fun_name(x,y,z):
-    print(f'{x,y,z}')
-fun_name(x=10,y=88,z=66)   
+
+
+# def fun_name(**kwargs):
+#     print(kwargs)
+#     print(type(kwargs))
+# var=eval(input("enter any dict :"))      # ye error case h imp h 
+# fun_name(var) 
+
+
+
+# def fun_name(**kwargs):
+#     print(kwargs)
+#     print(type(kwargs))
+# var=eval(input("enter any dict :"))      # ye error case h imp h 
+# fun_name(**var) 
+
+# def fun_name(**n):
+#     for k,v in n.items():
+#         print(f'{k}={v}')
+# var=eval(input("enter any dict :"))      # ye error case h imp h 
+# fun_name(**var) 
+
+# =================================================== types of function =======================================
+# 1.  with argument and with return 
+
+# def show_datails(name):
+#     return name 
+# x=input("enter your name:")
+# result = show_datails(x)
+# print (result)
+
+# # 2. with argument and without return 
+# def show_datails(name):
+#     print(name) 
+# x=input("enter your name:")
+# show_datails(x)
+
+# #3. without argument and with return
+
+# def show_datails():
+#     return x 
+# x=input("enter your name:")
+# result = show_datails()
+# print (result)
+
+
+#4. without argument without return 
+# def show_datails():
+#    x=input("enter your name:")
+#    print(x)
+
+# show_datails()
+
+#******************************************  variable scope  ****************************************
+
+# x,y=11,22
+# def add():
+#     print(x+y)
+# add()    
+
+
+#******************************************** global scope  ******************************************************
+
+# x,y=11,33
+# def add():
+#     p,q=22,55    # local 
+#     print(p,q)
+#     print(x,y)   #global
+
+# add()
+# print(x,y)
+# print(p,q)
+
+
+
+# x,y=10,22
+# def add():
+#     x=20
+#     print(x)
+# add()   
+# print(x) 
+
+# # afer ham local variable ko global bnaana ho to global keyword ka use kr skte hh 
+# x,y=10,22
+# def add():
+#     global z
+#     z=20
+#     print(z)
+# add()   
+# print(z) 
+
+# ager dono same nme se defind ho to local value  nikalne ke liye
+# x=10
+# def add():
+#     x=20
+#     print(globals()['x'])
+# add()  
+
+
+#  sum krne ke liye
+# x=10
+# def add():
+#     x=20
+#     sum = globals()['x'] + x
+#     print(sum)
+# add()    
