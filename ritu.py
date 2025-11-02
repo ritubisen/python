@@ -9,7 +9,7 @@ print("1. KEYWORDS")
 print("\n")
 
 keys = keyword.kwlist
-print("this is keywords")
+print("this is keyword")
 print(keys)
 print(len(keys))
 
