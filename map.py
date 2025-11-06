@@ -159,28 +159,55 @@
 
 
 
-def outer(x):
-    def inner():
-            print("welcome")
-            x()
+# def outer(x):
+#     def inner():
+#             print("welcome")
+#             x()
+#     return inner
+# def display()  :
+#         print("hello")   
+# res=outer(display)    
+# res()
+
+
+
+
+# def outer(x):
+#     def inner(p,q):
+#           p=p+5
+#           q=q+9
+#           x(p,q)
+#     return inner
+# @outer
+# def display (x,y):
+#       print(x+y)
+# display(1,2)      
+# 
+# def decorator(x):
+#     def inner (p,q,r):
+#         p=p-5
+#         q=q-10
+#         r=r-15
+#         z=x(p,q,r)
+#         return z
+#     return inner
+# @decorator
+# def add (a,b,c):
+#     return a-b-c
+# res=add(2,4,6)
+# print(10,20,30)
+
+def decorator(x):
+    def inner(p,q,r):
+        p=p+5
+        q=q+10
+        r=r+5
+        return p+q+r
     return inner
-def display()  :
-        print("hello")   
-res=outer(display)    
-res()
+@decorator
+def add (a,b,c):
+    return a+b+c
+res=add(20,40,10)
+print(res)
 
-
-
-
-def outer(x):
-    def inner(p,q):
-          p=p+5
-          q=q+9
-          x(p,q)
-    return inner
-@outer
-def display (x,y):
-      print(x+y)
-display(1,2)      
-     
-   
+# //////////////////////////////////////////////////////generator////////////////////////////////////////////////////////////
