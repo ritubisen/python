@@ -197,17 +197,57 @@
 # res=add(2,4,6)
 # print(10,20,30)
 
-def decorator(x):
-    def inner(p,q,r):
-        p=p+5
-        q=q+10
-        r=r+5
-        return p+q+r
-    return inner
-@decorator
-def add (a,b,c):
-    return a+b+c
-res=add(20,40,10)
-print(res)
+# def decorator(x):
+#     def inner(p,q,r):
+#         p=p+5
+#         q=q+10
+#         r=r+5
+#         return p+q+r
+#     return inner
+# @decorator
+# def add (a,b,c):
+#     return a+b+c
+# res=add(20,40,10)
+# print(res)
 
 # //////////////////////////////////////////////////////generator////////////////////////////////////////////////////////////
+
+# def data():
+#     for i in range(1,10):
+#         yield i
+
+# x=data()
+# print (x)
+
+
+
+# def data():
+#     for i in range(1,10):
+#         yield i
+
+# x=data()
+# # for i in x:
+# #     print(i)
+
+# print(next(x))
+# print(next(x))
+# print("hello")
+
+# print(next(x))
+# for i in x:
+#     print(i)
+
+
+
+    ###/////////////////////////////////////////////// ittretor //////////////////////////////////////////////
+
+l=[1,2,3,4,5,6,7,"python"]
+l1=iter(l)
+print(l1)
+print(next(l1))
+print(next(l1))
+print(next(l1))
+print(next(l1))
+print(next(l1))
+
+
