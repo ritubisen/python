@@ -75,10 +75,11 @@
 
 
 # ********************************((((((((((((((((((((((  topics ))))))))))))))))))))))***************************************
-#  class 
-# object 
-# constructor 
-# self
+# 1.  class 
+# 2.  object 
+# 3.  constructor 
+# 4.  self
+# 5.  variable
 
 
 # ************************************(((((((((((((((((((((    variable    )))))))))))))))))))))********************************
@@ -145,14 +146,73 @@
 
 
 
-class student :
-      school_name='cyrome'
-      def __init__(self,name,rollno):                                  #  inside
-          self.n,self.r=name,rollno               # decalartion
-          student.gread = '10th'
-      def addnew(self):
-          student.principle="python"
+# class student :                                         
+#       school_name='cybrom'                          # decalartion
+#       def __init__(self,name,rollno):                                 
+#           self.n,self.r=name,rollno               # decalartion
+#           student.gread = '10th'
+#           print(student.school_name,student.school_city)     # calling
+#       def addnew(self):
+#           student.principle="python"
+#           print(student. school_city,student.gread)           # calling
 
-student.school_city="bhopal"
-obj=student('ritu',987)  
-obj.addnew()                                  
+# student.school_city="bhopal"                      #  declaration 
+# obj=student('ritu',987)  
+# obj.addnew()  
+# print(obj.principle)                             # calling(not recomnded)   
+# print(student.principle)                          # calling (recomded)      
+
+
+
+# 3. >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>( local variable )>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# class student :
+#      def __init__(self):
+#           x=10
+#           print(x)
+#      def new(self):
+#           y=10
+#           print(y) 
+#           # print(x) 
+# obj=student()      
+# obj.new()       
+          
+
+ #  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< """"""""""""""""""'methods""""""""""""""""""""""<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ # 
+#  # 1.          instance method (first perametar is self) -->>  refer to object 
+#    2.            class  method (first parametar is cls)| , @classmethod
+#                                                        |--->>> refer to class
+#   3.           static method                                                  
+
+
+
+# class Book :
+#     price=100
+#     def __init__(self ,title,total_page):
+#          self.t=title
+#          self.tp=total_page
+#     @classmethod
+#     def update_price(cls,p):
+#                   cls.p=11
+# obj=Book('python',400)  
+# print(obj.t,obj.tp,Book.price)  
+# x=float(input("enter updated price"))   
+# obj.update_price(x)
+# obj1=Book('python',500) 
+# print(obj.t,obj.tp,Book.price)                
+
+
+# --------------------------------------------------------------  static method ----------------------------------------------------------------
+
+class web:
+        def __init__(self,name):
+                self.n=name
+        def great():
+                print("welcome to my web page") 
+# obj = web('ecomm') 
+# obj.gread() 
+# 
+#                      
+obj = web
+obj.great()                      
