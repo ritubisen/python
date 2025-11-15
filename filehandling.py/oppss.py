@@ -178,7 +178,7 @@
 # obj.new()       
           
 
- #  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< """"""""""""""""""'methods""""""""""""""""""""""<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ #  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< """""""""""""""""" methods """"""""""""""""""""""<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
  # 
 #  # 1.          instance method (first perametar is self) -->>  refer to object 
 #    2.            class  method (first parametar is cls)| , @classmethod
@@ -205,14 +205,63 @@
 
 # --------------------------------------------------------------  static method ----------------------------------------------------------------
 
-class web:
-        def __init__(self,name):
-                self.n=name
-        def great():
-                print("welcome to my web page") 
+# class web:
+#         def __init__(self,name):
+#                 self.n=name
+#         @staticmethod        
+#         def great():
+#                 print("welcome to my web page")    # ststic method h ye
 # obj = web('ecomm') 
-# obj.gread() 
-# 
-#                      
-obj = web
-obj.great()                      
+# obj.great() 
+
+
+
+# class web:
+#         def __init__(self,name):
+#                 self.n=name
+#         def great():
+#                 print("welcome to my web page")                   
+# obj = web
+# obj.great()                      
+
+
+#*****************************(((((((((((((((((((((((((((     proparties     )))))))))))))))))))))))))))****************************************
+
+# 1.  abstraction
+# 2.  encapsulation
+# 3.  inheritance
+# 4.  polymorphism
+
+# ----------------------------------------------------------------  inheritance  ----------------------------------------------------------
+#----------------------------------------------------------------( parent-child  relation )------------------------------------------------
+
+# single - level 
+
+# class parent:
+#     car='toyota'
+#     def home(self):
+#         print("home from parent")
+# class child(parent):
+    
+#     pass
+# obj=child()
+# print(obj.car)
+# obj.home()
+
+# use super() key
+
+
+class parent:
+    car='nexon'
+    def home(self):
+        print("home for parent")
+class child(parent) :
+   def home(self):
+        print("home for child")  
+        super().home() 
+obj=child()
+obj.home()            
+
+
+
+  
