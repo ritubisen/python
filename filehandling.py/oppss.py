@@ -252,7 +252,7 @@
 
 
 class parent:
-    car='nexon'
+    car='toyota'
     def home(self):
         print("home for parent")
 class child(parent) :
@@ -264,4 +264,3 @@ obj.home()
 
 
 
-  
