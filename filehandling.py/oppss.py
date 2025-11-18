@@ -222,7 +222,44 @@
 #         def great():
 #                 print("welcome to my web page")                   
 # obj = web
-# obj.great()                      
+# obj.great() 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# #   --------------------- class  method h isme class variable bn skte h --------------------------------
+# class student:
+#     school='SHSS'
+#     gread='10th'
+#     def __init__(self,name,rollno):
+#         self.n=name
+#         self.r=rollno
+#     @classmethod
+#     def upgread_grd(cls,new_gread):
+#         cls.gread=new_gread 
+
+# print(id(student)) 
+# obj1=student('rit',222) 
+# obj2=student('ruchi',250)  
+# obj3=student('ruchi',250)  
+# obj4=student('ruchi',250) 
+# print(obj1.gread,obj2.gread) 
+# print(obj3.gread,obj4.gread)     
+# obj1.upgread_grd('11th')
+# print(id(student)) 
+
+# obj5=student('rit',222) 
+# obj6=student('ruchi',250)  
+# obj7=student('ruchi',250)  
+# obj8=student('ruchi',250) 
+# print(obj5.gread,obj6.gread) 
+# print(obj7.gread,obj8.gread)  
+# print(obj1.gread,obj2.gread) 
+# print(obj3.gread,obj4.gread)  
+                     
 
 
 #*****************************(((((((((((((((((((((((((((     proparties     )))))))))))))))))))))))))))****************************************
@@ -251,16 +288,98 @@
 # use super() key
 
 
-class parent:
-    car='toyota'
+# class parent:
+#     car='toyota'
+#     def home(self):
+#         print("home for parent")
+# class child(parent) :
+#    def home(self):
+#         print("home for child")  
+#         super().home() 
+# obj=child()
+# obj.home()            
+
+#****************************************************  (  multi-lavel  inheritance )  *********************************************************
+# class Grandparent:
+#     car='bmw'
+#     def home(self):
+#         print("home for grandparent")
+# class Parent(Grandparent)       :
+#     def home(self):
+#         print("home for parent")
+#         super().home()
+        
+# class Child(Parent) :
+#     def home(self):
+#        print("home for child")  
+#        super().home()        
+# obj=Child()     
+# obj.home() 
+
+
+#***************************************************  ( multiple inheritance )  *********************************************************
+
+ #             MRO   (method resulution order  (depth first algorithm per work krta h))........................
+
+
+
+# class Parent2:
+   
+#     def home(self):
+#         print("home for parent2")
+# class Parent1(Parent2)       :
+#     def home(self):
+#         print("home for parent1")
+#         super().home()
+        
+# class Child(Parent1,Parent2) :
+#     def home(self):
+#        print("home for child")  
+#        super().home()        
+# obj=Child()     
+# obj.home() 
+
+
+class A:
+    def home(self):
+        print("parent1")
+        B.home(self)
+        B().home()   # donomethod use hogi
+    def car(self):
+        print("parent1")
+class B:
+    def home(self):
+        print("Parent2") 
+    def bank(self)   :
+        print("Parent2")  
+class C(A,B):
+    def home(self):
+        super().home()
+        print("home for child")
+obj=C() 
+obj.home()
+obj.bank()  
+obj.car()     
+        
+class parent1:
     def home(self):
         print("home for parent")
-class child(parent) :
-   def home(self):
-        print("home for child")  
-        super().home() 
-obj=child()
-obj.home()            
+        parent2.home(self)
+class parent2  :
+    def home(self) :
+        print("home for child1") 
+        super().home()
+class child2(parent1,parent2)    :
+    def home(self) :
+        print("home for child2")   
+        super.home()
+obj=child2()   
+obj.home()  
 
 
+                              
+   
+
+   
+   
 
