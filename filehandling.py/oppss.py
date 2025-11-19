@@ -340,46 +340,104 @@
 # obj.home() 
 
 
-class A:
-    def home(self):
-        print("parent1")
-        B.home(self)
-        B().home()   # donomethod use hogi
-    def car(self):
-        print("parent1")
-class B:
-    def home(self):
-        print("Parent2") 
-    def bank(self)   :
-        print("Parent2")  
-class C(A,B):
-    def home(self):
-        super().home()
-        print("home for child")
-obj=C() 
-obj.home()
-obj.bank()  
-obj.car()     
+# class A:
+#     def home(self):
+#         print("parent1")
+#         B.home(self)
+#         B().home()   # donomethod use hogi
+#     def car(self):
+#         print("parent1")
+# class B:
+#     def home(self):
+#         print("Parent2") 
+#     def bank(self)   :
+#         print("Parent2")  
+# class C(A,B):
+#     def home(self):
+#         super().home()
+#         print("home for child")
+# obj=C() 
+# obj.home()
+# obj.bank()  
+# obj.car()     
+
+
+ #**************************  hirarical ***********************************************
+# class parent1:
+#     def home(self):
+#         print("home for parent")
+#         Child1.home(self)
+# class Child1  :
+#     def home(self) :
+#         print("home for child1") 
+#         super().home()
+# class child(parent1,parent2)    :
+#     def home(self) :
+#         super.home()
+#         print("home for child") 
+# obj=child()   
+# obj.home()  
+
+
+
+#******************************************  hybrid  *********************************************
+
+# class A:
+#     def home(self):
+       
+#         print("home for A")
+#     def car(self):
+#         print("car for A")   
+
+# class B(A):
+#     def home(self) :
+#         super().home() 
+#         print(" home for B")  
+       
+# class C(A):
+#     def home(self): 
+#         super().home() 
+#         print(" home for C")  
         
-class parent1:
-    def home(self):
-        print("home for parent")
-        parent2.home(self)
-class parent2  :
-    def home(self) :
-        print("home for child1") 
-        super().home()
-class child2(parent1,parent2)    :
-    def home(self) :
-        print("home for child2")   
-        super.home()
-obj=child2()   
-obj.home()  
-
-
+# class D(B,C):
+#     def home(self): 
+#         super().home() 
+#         print(" home for D")  
+# obj=D()
+# obj1=C()   
+# obj2=B()    
+# obj.home()
+# obj.car()
                               
    
+# *******************************((((((((((((((((((((((((((  polymorphism  ))))))))))))))))))))))))))******************************************
 
+
+class student
+
+
+
+
+
+
+
+
+
+class A:
+    def detail(self):
+        return None
+class B(A):
+    def detail(self):
+        return"from B class"  
+class C(A):
+    def detail(self):
+        return"from C class"
+obj1=B() 
+print(obj1.detail())
+obj2=C()
+print(obj2.detail())   
+
+      
    
    
 
