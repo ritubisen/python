@@ -413,14 +413,14 @@
 # *******************************((((((((((((((((((((((((((  polymorphism  ))))))))))))))))))))))))))******************************************
 
 
-class student
-
-
-
-
-
-
-
+class student:
+    def detail(self):
+        print("i am stuent")
+class employee:
+    def detail(self):
+        print("i am employee")    
+student().detail()            
+employee().detail()    
 
 
 class A:
@@ -436,6 +436,29 @@ obj1=B()
 print(obj1.detail())
 obj2=C()
 print(obj2.detail())   
+
+
+
+# Abstraction..................................................................................................................................
+# class webpage(ABC):
+#     def dashboard (self):
+#         print("welcome to dashboard")
+#     def userprofile(self):
+#         print("welcome to profile page")
+#     @abstractmethod
+#     def login(self,user,passward):
+#         pass
+# class user(webpage):d
+#     def login(self,user,passward):
+#         print("login sucsefully")
+# obj=user()
+# obj.userprofile()
+# obj.dashboard()
+
+# ***************************************************encaptulation**************************************************
+
+
+
 
       
    
