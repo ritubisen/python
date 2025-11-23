@@ -35,3 +35,4 @@
 # print(__name__)
 x=10
 print(dir(x))
+print((x))

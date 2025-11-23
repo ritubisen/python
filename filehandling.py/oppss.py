@@ -413,29 +413,29 @@
 # *******************************((((((((((((((((((((((((((  polymorphism  ))))))))))))))))))))))))))******************************************
 
 
-class student:
-    def detail(self):
-        print("i am stuent")
-class employee:
-    def detail(self):
-        print("i am employee")    
-student().detail()            
-employee().detail()    
+# class student:
+#     def detail(self):
+#         print("i am stuent")
+# class employee:
+#     def detail(self):
+#         print("i am employee")    
+# student().detail()            
+# employee().detail()    
 
 
-class A:
-    def detail(self):
-        return None
-class B(A):
-    def detail(self):
-        return"from B class"  
-class C(A):
-    def detail(self):
-        return"from C class"
-obj1=B() 
-print(obj1.detail())
-obj2=C()
-print(obj2.detail())   
+# class A:
+#     def detail(self):
+#         return None
+# class B(A):
+#     def detail(self):
+#         return"from B class"  
+# class C(A):
+#     def detail(self):
+#         return"from C class"
+# obj1=B() 
+# print(obj1.detail())
+# obj2=C()
+# print(obj2.detail())   
 
 
 
@@ -457,10 +457,66 @@ print(obj2.detail())
 
 # ***************************************************encaptulation**************************************************
 
+#1. public/variable method :----
+
+class A:
+    x=10
+    def show(self):
+        print("hello")
+class B(A)   :
+    pass 
+obj=B()
+print(obj.x)  
+obj.show()
+print(A.x)
+
+
 
 
 
       
+#2. protected variable / method :----(not supported in python)
    
-   
+class A:
+    _x=10
+    def _show(self):
+        print("hello")
+class B(A)   :
+    pass 
+obj=B()
+print(obj._x)  
+obj._show()
+print(A._x)
 
+
+
+#2. private variable / method :----
+# class A:
+#     __x=10
+#     def _show(self):
+#         print("hello")
+# class B(A)   :
+#     pass 
+# obj=B()
+# # print(obj.__x)  
+# # obj.__show()
+# print(A.__x)
+
+
+
+
+
+class A:
+    __x=10
+    def _show(self):
+        print("hello")
+class B(A)   :
+    pass 
+obj=B()
+# # print(obj.__x)  
+# # obj.__show()
+# print(A.__x)
+print(dir(A))
+print(A._A__x)
+
+# module,package,library:-----------------
