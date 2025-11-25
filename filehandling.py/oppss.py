@@ -518,5 +518,6 @@ obj=B()
 # print(A.__x)
 print(dir(A))
 print(A._A__x)
+print(A._A__x)
 
 # module,package,library:-----------------
